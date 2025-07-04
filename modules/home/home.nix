@@ -34,7 +34,6 @@
     davinci-resolve
 
     ## gaming
-    steam
     lutris
     protonplus
     #dolphin-emu
