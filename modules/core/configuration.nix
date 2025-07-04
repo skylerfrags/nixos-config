@@ -6,6 +6,7 @@
       ./plasma.nix
       ./bootloader.nix
       ./nvidia.nix
+      # ./thunar.nix # enable when not using KDE
     ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];

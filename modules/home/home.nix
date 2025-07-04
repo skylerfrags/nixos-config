@@ -23,7 +23,6 @@
     ## general
     brave
     bitwarden
-    # xfce.thunar
     wget
 
     ## audio and video
