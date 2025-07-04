@@ -6,6 +6,7 @@
     ./git.nix
     ./discord.nix
     ./kitty.nix
+    ./shell.nix
   ];
 
   home.packages = with pkgs; [
