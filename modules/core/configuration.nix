@@ -1,26 +1,14 @@
 { config, pkgs, ... }:
 
 {
-  imports =
-    [ # Include the results of the hardware scan.
+  imports = [
       ./hardware-configuration.nix
+      ./plasma.nix
+      ./bootloader.nix
+      ./nvidia.nix
     ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
-
-  # Temp kde install
-  services = {
-    desktopManager.plasma6.enable = true;
-    displayManager.sddm.enable = true;
-    displayManager.sddm.wayland.enable = true;
-  };
-
-  # Bootloader
-  boot.loader.grub.enable = true;
-  boot.loader.grub.useOSProber = true;
-  boot.loader.grub.device = "nodev";
-  boot.loader.grub.efiSupport = true;
-  boot.loader.efi.canTouchEfiVariables = true;
 
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
@@ -67,22 +55,7 @@
   programs.steam.enable = true;
 
   environment.systemPackages = with pkgs; [
-    wget
   ];
-
-  # OpenGL and Nvidia
-  hardware.graphics.enable = true;
-
-  services.xserver.videoDrivers = [ "nvidia" ];
-
-  hardware.nvidia = {
-    modesetting.enable = true;
-    powerManagement.enable = true;
-    powerManagement.finegrained = false;
-    open = false;
-    nvidiaSettings = true;
-    package = config.boot.kernelPackages.nvidiaPackages.stable;
-  };
 
   system.stateVersion = "25.05"; # dont change 
 
