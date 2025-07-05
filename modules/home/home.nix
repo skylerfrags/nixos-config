@@ -27,6 +27,7 @@
     wget
 
     ## audio and video
+    spotify
     obs-studio
     easyeffects
     mpv
