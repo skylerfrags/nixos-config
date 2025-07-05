@@ -7,6 +7,7 @@
       ./bootloader.nix
       ./nvidia.nix
       # ./thunar.nix # enable when not using KDE
+      ./audio.nix
     ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
