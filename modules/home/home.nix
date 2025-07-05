@@ -7,6 +7,7 @@
     ./discord.nix
     ./kitty.nix
     ./shell.nix
+    ./brave.nix
   ];
 
   home.packages = with pkgs; [
@@ -22,7 +23,6 @@
     lazygit
 
     ## general
-    brave
     bitwarden
     wget
 
@@ -38,6 +38,7 @@
     lutris
     protonplus
     #dolphin-emu
+    #prismlauncher
 
     ## dev
     vscode
