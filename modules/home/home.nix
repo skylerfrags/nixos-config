@@ -12,17 +12,13 @@
 
   home.packages = with pkgs; [
 
-    ## cli
-    maxfetch
+    ## general
+    fastfetch
     unzip
     ripgrep
     fzf
     btop
     htop
-    neovim
-    lazygit
-
-    ## general
     bitwarden
     wget
 
@@ -39,11 +35,16 @@
     lutris
     protonplus
     #dolphin-emu
+    #cemu
+    #ryujinx
     #prismlauncher
 
     ## dev
     vscode
+    neovim
+    lazygit
     odin                # May build it from master branch instead at some point
+    gcc
 
     ## fonts
     nerd-fonts.jetbrains-mono
