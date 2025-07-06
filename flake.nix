@@ -8,9 +8,15 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    catppuccin = {
+      url = "github:catppuccin/nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
   };
 
-  outputs = { self, nixpkgs, home-manager, ... }@inputs: {
+  outputs = { self, nixpkgs, home-manager, catppuccin, ... }@inputs: {
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
       modules = [
@@ -20,7 +26,12 @@
 	      {
           home-manager.useGlobalPkgs = true;
 	        home-manager.useUserPackages = true;
-	        home-manager.users.skyler = import ./modules/home/home.nix;
+	        home-manager.users.skyler = {
+            imports = [
+              ./modules/home/home.nix
+              catppuccin.homeModules.catppuccin
+            ];
+          };
 	      }
       ];
     };

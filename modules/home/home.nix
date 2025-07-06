@@ -11,6 +11,12 @@
     ./obs.nix
   ];
 
+  catppuccin = {
+    accent = "pink";
+    flavor = "mocha";
+    enable = true;
+  };
+
   home.packages = with pkgs; [
 
     ## general
