@@ -8,6 +8,7 @@
     ./kitty.nix
     ./shell.nix
     ./brave.nix
+    ./obs.nix
   ];
 
   home.packages = with pkgs; [
@@ -24,7 +25,6 @@
 
     ## audio and video
     spotify
-    obs-studio
     easyeffects
     mpv
     ffmpeg
