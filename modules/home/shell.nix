@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ config, pkgs, ... }:
 {
 
   programs.bash = {
@@ -8,7 +8,6 @@
 
   programs.starship = {
     enable = true;
-
     enableBashIntegration = true;
   };
 }

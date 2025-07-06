@@ -14,6 +14,8 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    #hyprland.url = "github:hyprwm/Hyprland";
+
   };
 
   outputs = { self, nixpkgs, home-manager, catppuccin, ... }@inputs: {
@@ -21,7 +23,6 @@
       system = "x86_64-linux";
       modules = [
         ./modules/core/configuration.nix
-
 	      home-manager.nixosModules.home-manager
 	      {
           home-manager.useGlobalPkgs = true;

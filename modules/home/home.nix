@@ -3,12 +3,16 @@
 {
 
   imports = [
+
+    ./hyprland
+
     ./git.nix
     ./discord.nix
     ./kitty.nix
     ./shell.nix
     ./brave.nix
     ./obs.nix
+    
   ];
 
   catppuccin = {
