@@ -4,8 +4,6 @@
 
   imports = [
 
-    ./hyprland
-
     ./git.nix
     ./discord.nix
     ./kitty.nix
