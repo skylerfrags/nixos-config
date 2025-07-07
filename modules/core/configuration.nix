@@ -6,7 +6,7 @@
       ./wm-and-login.nix
       ./bootloader.nix
       ./nvidia.nix
-      ./thunar.nix # enable when not using KDE
+      # ./thunar.nix # enable when not using KDE
       ./audio.nix
     ];
 
@@ -62,6 +62,14 @@
 
   environment.systemPackages = with pkgs; [
   ];
+
+  nix.settings.auto-optimize-store = true;
+  nix.optimize.automatic = true;
+  nix.gc = {
+    automatic = true;
+    dates = "weekly";
+    options = "--delete-older-than-7d";
+  };
 
   system.stateVersion = "25.05"; # dont change 
 
