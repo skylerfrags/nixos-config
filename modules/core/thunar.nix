@@ -1,8 +1,9 @@
 { config, pkgs, ... }:
 
 {
-  programs.thunar = {
-    enable = true;
+  programs = {
+    thunar.enable = true;
+    xfconf.enable = true;
   };
 
   services = {
