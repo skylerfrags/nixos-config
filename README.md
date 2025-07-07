@@ -1,5 +1,5 @@
 # my nixos setup
-pretty minimal setup, idk why you're here but hi :3
+minimal, scuffed setup
 
 # install
 ```bash

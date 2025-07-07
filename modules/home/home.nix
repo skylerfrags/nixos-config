@@ -4,6 +4,8 @@
 
   imports = [
 
+    ./desktops/niri
+
     ./git.nix
     ./discord.nix
     ./kitty.nix

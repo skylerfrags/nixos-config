@@ -3,7 +3,7 @@
 {
   imports = [
       ./hardware-configuration.nix
-      ./wm-and-login.nix
+      ./wm.nix
       ./bootloader.nix
       ./nvidia.nix
       # ./thunar.nix # enable when not using KDE
@@ -63,8 +63,6 @@
   environment.systemPackages = with pkgs; [
   ];
 
-  nix.settings.auto-optimize-store = true;
-  nix.optimize.automatic = true;
   nix.gc = {
     automatic = true;
     dates = "weekly";
