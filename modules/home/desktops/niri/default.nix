@@ -5,6 +5,7 @@
     pavucontrol
     playerctl
     fuzzel
+    xwayland-satellite
   ];
 
   programs.niri.config = builtins.readFile ./config.kdl;
