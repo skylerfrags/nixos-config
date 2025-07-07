@@ -17,4 +17,9 @@
     XDG_SESSION_DESKTOP = "niri";
   };
 
+  programs.waybar = {
+    enable = true;
+    style = builtins.readFile ./style.css;
+  };
+
 }
