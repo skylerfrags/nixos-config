@@ -9,6 +9,9 @@
       size = 13;
     };
 
-    extraConfig = "hide_window_decorations yes";
+    settings = {
+      background_opacity = 0.5;
+      hide_window_decorations = true;
+    };
   };
 }

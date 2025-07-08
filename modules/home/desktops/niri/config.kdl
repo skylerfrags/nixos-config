@@ -78,6 +78,7 @@ window-rule {
 
 window-rule {
     match app-id="kitty"
+    draw-border-with-background false
     default-column-width {
         proportion 0.333
     }

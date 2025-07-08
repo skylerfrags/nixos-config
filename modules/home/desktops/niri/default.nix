@@ -4,13 +4,14 @@
   home.packages = with pkgs; [
     pavucontrol
     playerctl
-    fuzzel
     xwayland-satellite
   ];
 
   programs.niri.config = builtins.readFile ./config.kdl;
 
   services.swww.enable = true;
+
+  programs.fuzzel.enable = true;
 
   home.sessionVariables = {
     NIXOS_OZONE_WL = "1";

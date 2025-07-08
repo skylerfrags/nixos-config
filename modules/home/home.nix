@@ -14,6 +14,7 @@
     ./shell.nix
     ./brave.nix
     ./obs.nix
+    ./cava.nix
     
   ];
 
@@ -24,24 +25,22 @@
     cursors.enable = true;
     cursors.flavor = "mocha";
     cursors.accent = "dark";
+    gtk.enable = true;
+    cava.transparent = true;
   };
 
   home.packages = with pkgs; [
 
     ## general
-    fastfetch
     unzip
     ripgrep
     fzf
-    btop
     htop
     bitwarden
     wget
 
     ## audio and video
-    spotify
     easyeffects
-    mpv
     ffmpeg
     # grayjay           # 04/07/2025, doesnt build, sha256:c1053553fbff49e3bc136efcf3612ab3639baec7914fa407472a8e74b440ff4d is not a valid attribute name: prebuilt/.gitattributes:2
     davinci-resolve
@@ -57,7 +56,6 @@
     ## dev
     vscode
     neovim
-    lazygit
     odin                # May build it from master branch instead at some point
     gcc
 
@@ -70,6 +68,15 @@
     noto-fonts-monochrome-emoji
 
   ];
+
+  # enabling programs with no configuration for catppuccin flake
+  programs = {
+    btop.enable = true;
+    spotify-player.enable = true;
+    mpv.enable = true;
+    lazygit.enable = true;
+    mangohud.enable = true;
+  };
 
   home.username = "skyler";
   home.homeDirectory = "/home/skyler";
