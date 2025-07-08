@@ -18,9 +18,12 @@
   ];
 
   catppuccin = {
+    enable = true;
     accent = "pink";
     flavor = "mocha";
-    enable = true;
+    cursors.enable = true;
+    cursors.flavor = "mocha";
+    cursors.accent = "dark";
   };
 
   home.packages = with pkgs; [

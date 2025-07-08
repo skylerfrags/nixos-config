@@ -15,6 +15,11 @@ spawn-at-startup "waybar"
 spawn-at-startup "swww-daemon"
 spawn-at-startup "xwayland-satellite"
 
+cursor {
+    xcursor-theme "Catppuccin-Mocha-Dark-Cursors"
+    xcursor-size 24
+}
+
 output "DP-4" {
     focus-at-startup
     mode "2560x1440@239.972"
