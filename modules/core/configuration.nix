@@ -6,7 +6,7 @@
       ./wm.nix
       ./bootloader.nix
       ./nvidia.nix
-      # ./thunar.nix # enable when not using KDE
+      ./thunar.nix
       ./audio.nix
     ];
 
