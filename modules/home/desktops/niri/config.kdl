@@ -158,6 +158,9 @@ binds {
     Alt+Print { screenshot-window; }
     Mod+Shift+P { power-off-monitors; }
 
+    // OBS Websocket for global hotkeys because wayland can suck my balls and dick
+    Mod+F12 { spawn "obs-cmd" "replay" "save"; }
+
 }
 
 environment {

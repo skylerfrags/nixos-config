@@ -6,7 +6,7 @@
       general = {
         framerate = 240;
         autosens = 0;
-        sensitivity = 2000;
+        sensitivity = 2000; # This looks fine when using spotify-player but looks terrible using anything else
         bars = 0;
         center_align = 0;
       };
