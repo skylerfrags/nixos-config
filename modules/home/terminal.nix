@@ -14,4 +14,8 @@
       hide_window_decorations = true;
     };
   };
+
+  programs.zellij = {
+    enable = true;
+  };
 }
