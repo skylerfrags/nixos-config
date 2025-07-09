@@ -5,7 +5,8 @@
     settings = {
       general = {
         framerate = 240;
-        autosens = 1;
+        autosens = 0;
+        sensitivity = 2000;
         bars = 0;
         center_align = 0;
       };
