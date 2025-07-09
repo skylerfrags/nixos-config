@@ -10,7 +10,7 @@
 
     ./git.nix
     ./discord.nix
-    ./kitty.nix
+    ./terminal.nix
     ./shell.nix
     ./brave.nix
     ./obs.nix
@@ -48,9 +48,16 @@
     ## gaming
     lutris
     protonplus
+    #crispy-doom
+    #dsda-doom
+    #chocolate-doom
+    #bottles
     #dolphin-emu
     #cemu
     #ryujinx
+    #rpcs3
+    #dolphin-emu
+    #mupen64plus
     #prismlauncher
 
     ## dev
@@ -66,6 +73,11 @@
     noto-fonts-cjk-sans
     noto-fonts-color-emoji
     noto-fonts-monochrome-emoji
+
+    ## fun terminal stuff
+    pipes
+    tty-clock
+
 
   ];
 
