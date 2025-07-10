@@ -9,7 +9,6 @@
     # i cba to learn plasma-manager rn
 
     ./git.nix
-    ./discord.nix
     ./terminal.nix
     ./shell.nix
     ./brave.nix
@@ -82,13 +81,14 @@
 
   ];
 
-  # enabling programs with no configuration for catppuccin flake
+  # enabling programs with no configuration
   programs = {
     btop.enable = true;
     spotify-player.enable = true;
     mpv.enable = true;
     lazygit.enable = true;
     mangohud.enable = true;
+    vesktop.enable = true;
   };
 
   home.username = "skyler";
