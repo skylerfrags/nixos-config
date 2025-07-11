@@ -6,6 +6,5 @@
     neovim.enable = false;
     vscode.enable = false;
     waybar.enable = false;
-    chromium.enable = false;
   };
 }
