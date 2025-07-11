@@ -9,25 +9,25 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    catppuccin = {
-      url = "github:catppuccin/nix";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     niri = {
       url = "github:sodiboo/niri-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    stylix = {
+      url = "github:danth/stylix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
   };
 
-  outputs = { self, nixpkgs, home-manager, catppuccin, niri, ... }@inputs: {
+  outputs = { self, nixpkgs, home-manager, niri, stylix, ... }@inputs: {
     nixosConfigurations = {
       nixos = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
           ./modules/core/configuration.nix
-          catppuccin.nixosModules.catppuccin
+          stylix.nixosModules.stylix
           niri.nixosModules.niri
 	        home-manager.nixosModules.home-manager
 	        {
@@ -36,7 +36,6 @@
 	          home-manager.users.skyler = {
               imports = [
                 ./modules/home/home.nix
-                catppuccin.homeModules.catppuccin
               ];
             };
 	        }

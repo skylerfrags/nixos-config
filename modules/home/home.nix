@@ -17,17 +17,6 @@
     
   ];
 
-  catppuccin = {
-    enable = true;
-    accent = "pink";
-    flavor = "mocha";
-    cursors.enable = true;
-    cursors.flavor = "mocha";
-    cursors.accent = "dark";
-    gtk.enable = true;
-    cava.transparent = true;
-  };
-
   home.packages = with pkgs; [
 
     ## general
@@ -77,7 +66,6 @@
     ## fun terminal stuff
     pipes
     tty-clock
-
 
   ];
 
