@@ -55,14 +55,6 @@
     odin                # May build it from master branch instead at some point
     gcc
 
-    ## fonts
-    nerd-fonts.jetbrains-mono
-    jetbrains-mono
-    noto-fonts
-    noto-fonts-cjk-sans
-    noto-fonts-color-emoji
-    noto-fonts-monochrome-emoji
-
     ## fun terminal stuff
     pipes
     tty-clock

@@ -62,6 +62,12 @@
   programs.gamemode.enable = true;
 
   environment.systemPackages = with pkgs; [
+    nerd-fonts.jetbrains-mono
+    jetbrains-mono
+    noto-fonts
+    noto-fonts-cjk-sans
+    noto-fonts-color-emoji
+    noto-fonts-monochrome-emoji
   ];
 
   nix.gc = {
