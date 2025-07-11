@@ -8,6 +8,7 @@
     # I wanna add kde plasma as a 2nd option but
     # i cba to learn plasma-manager rn
 
+    ./stylix-home.nix
     ./git.nix
     ./terminal.nix
     ./shell.nix
