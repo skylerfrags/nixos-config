@@ -4,7 +4,7 @@
 
   imports = [
 
-    ./desktops/niri
+    #./desktops/niri
     # I wanna add kde plasma as a 2nd option but
     # i cba to learn plasma-manager rn
 
