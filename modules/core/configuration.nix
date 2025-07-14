@@ -6,7 +6,7 @@
       ./wm.nix
       ./bootloader.nix
       ./nvidia.nix
-      ./thunar.nix
+      #./thunar.nix
       ./audio.nix
     ];
 
@@ -57,6 +57,8 @@
     enable = true;
     gamescopeSession.enable = true;
   };
+
+  programs.dconf.enable = true;
 
   programs.gamemode.enable = true;
 
