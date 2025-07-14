@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ inputs, config, pkgs, ... }:
 
 {
 
@@ -8,11 +8,11 @@
     # I wanna add kde plasma as a 2nd option but
     # i cba to learn plasma-manager rn
 
-    ./stylix-home.nix
     ./git.nix
     ./terminal.nix
     ./shell.nix
-    ./brave.nix
+    ./zen.nix       # Firefox Fork
+    #./brave.nix    # Chromium Fork
     ./obs.nix
     ./cava.nix
     

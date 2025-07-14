@@ -12,22 +12,21 @@
     niri = {
       url = "github:sodiboo/niri-flake";
       inputs.nixpkgs.follows = "nixpkgs";
-    };
+   };
 
-    stylix = {
-      url = "github:danth/stylix";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+   zen-browser = {
+    url = "github:0xc000022070/zen-browser-flake";
+    inputs.nixpkgs.follows = "nixpkgs";
+   };
 
   };
 
-  outputs = { self, nixpkgs, home-manager, niri, stylix, ... }@inputs: {
+  outputs = { self, nixpkgs, home-manager, niri, zen-browser, ... }@inputs: {
     nixosConfigurations = {
       nixos = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
           ./modules/core/configuration.nix
-          stylix.nixosModules.stylix
           niri.nixosModules.niri
 	        home-manager.nixosModules.home-manager
 	        {
@@ -36,6 +35,7 @@
 	          home-manager.users.skyler = {
               imports = [
                 ./modules/home/home.nix
+                inputs.zen-browser.homeModules.twilight
               ];
             };
 	        }
