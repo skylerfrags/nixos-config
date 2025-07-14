@@ -27,9 +27,6 @@
     htop
     bitwarden
     wget
-
-    ## audio and video
-    obs-cmd             # WHY DOES WAYLAND NOT HAVE GLOBAL KEYBINDS??????????????
     easyeffects
     ffmpeg
     # grayjay           # 04/07/2025, doesnt build, sha256:c1053553fbff49e3bc136efcf3612ab3639baec7914fa407472a8e74b440ff4d is not a valid attribute name: prebuilt/.gitattributes:2
@@ -57,10 +54,6 @@
     neovim
     odin                # May build it from master branch instead at some point
     gcc
-
-    ## fun terminal stuff
-    pipes
-    tty-clock
 
   ];
 

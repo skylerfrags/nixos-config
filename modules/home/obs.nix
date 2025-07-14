@@ -9,4 +9,8 @@
       obs-pipewire-audio-capture
     ];
   };
+
+  home.packages = with pkgs; [
+    obs-cmd  # enable global hotkeys via websockets
+  ];
 }
