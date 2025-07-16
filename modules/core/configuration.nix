@@ -62,6 +62,8 @@
 
   programs.gamemode.enable = true;
 
+  services.input-remapper.enable = true;
+
   environment.systemPackages = with pkgs; [
     nerd-fonts.jetbrains-mono
     jetbrains-mono
