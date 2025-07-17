@@ -29,10 +29,10 @@
     wget
     easyeffects
     ffmpeg
-    # grayjay           # 04/07/2025, doesnt build, sha256:c1053553fbff49e3bc136efcf3612ab3639baec7914fa407472a8e74b440ff4d is not a valid attribute name: prebuilt/.gitattributes:2
+    #grayjay           # 04/07/2025, doesnt build, sha256:c1053553fbff49e3bc136efcf3612ab3639baec7914fa407472a8e74b440ff4d is not a valid attribute name: prebuilt/.gitattributes:2
     davinci-resolve
     krita
-    #gimp
+    #gimp              # 16/07/2025, doesnt build with current lock file
 
     ## gaming
     lutris
@@ -42,7 +42,7 @@
     #chocolate-doom
     #bottles
     #dolphin-emu
-    #cemu
+    cemu
     #ryujinx
     #rpcs3
     #dolphin-emu
