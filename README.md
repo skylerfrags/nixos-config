@@ -17,4 +17,8 @@ ln -s ~/nixos /etc/ # makes symlinks to the default location so you dont need to
 sudo nix-channel --add https://nixos.org/channels/nixos-unstable
 sudo nixos-rebuild switch
 ```
-TODO: make an automated install script
+# todo
+- [ ] make install script
+- [ ] add sops
+- [ ] add plasma-manager
+- [ ] add lanzeboot
