@@ -19,15 +19,20 @@
     inputs.nixpkgs.follows = "nixpkgs";
    };
 
+   catppuccin = {
+     url = "github:catppuccin/nix";
+   };
+
   };
 
-  outputs = { self, nixpkgs, home-manager, niri, zen-browser, ... }@inputs: {
+  outputs = { self, nixpkgs, home-manager, niri, zen-browser, catppuccin, ... }@inputs: {
     nixosConfigurations = {
       nixos = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
           ./modules/core/configuration.nix
           niri.nixosModules.niri
+          catppuccin.nixosModules.catppuccin
 	        home-manager.nixosModules.home-manager
 	        {
             home-manager.useGlobalPkgs = true;
@@ -36,6 +41,7 @@
               imports = [
                 ./modules/home/home.nix
                 inputs.zen-browser.homeModules.twilight
+                catppuccin.homeModules.catppuccin
               ];
             };
 	        }

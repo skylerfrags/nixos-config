@@ -18,6 +18,16 @@
     
   ];
 
+  catppuccin = {
+    enable = true;
+    accent = "mauve";
+    flavor = "mocha";
+    gtk.enable = true;
+    cava.transparent = true;
+    nvim.enable = false;
+    waybar.enable = false;
+  };
+
   home.packages = with pkgs; [
 
     ## general
