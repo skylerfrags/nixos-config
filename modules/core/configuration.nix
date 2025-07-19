@@ -7,6 +7,7 @@
       ./bootloader.nix
       ./nvidia.nix
       ./audio.nix
+      ./catppuccin.nix
     ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
