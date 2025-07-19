@@ -6,7 +6,6 @@
       ./wm.nix
       ./bootloader.nix
       ./nvidia.nix
-      #./thunar.nix
       ./audio.nix
     ];
 
@@ -61,6 +60,7 @@
   programs.dconf.enable = true;
 
   programs.gamemode.enable = true;
+  programs.gamescope.enable = true;
 
   services.input-remapper.enable = true;
 
