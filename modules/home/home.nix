@@ -10,7 +10,6 @@
 
     ./git.nix
     ./terminal.nix
-    ./shell.nix
     ./zen.nix       # Firefox Fork
     #./brave.nix    # Chromium Fork
     ./obs.nix
