@@ -4,10 +4,11 @@
 
   imports = [
 
-    #./desktops/niri
-    # I wanna add kde plasma as a 2nd option but
-    # i cba to learn plasma-manager rn
+    ## desktops
+    #./niri
+    ./plasma.nix
 
+    ## programs with configuration
     ./git.nix
     ./terminal.nix
     ./zen.nix       # Firefox Fork
@@ -52,7 +53,7 @@
     #bottles
     #dolphin-emu
     cemu
-    #ryujinx
+    ryujinx
     #rpcs3
     #dolphin-emu
     #mupen64plus

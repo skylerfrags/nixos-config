@@ -20,5 +20,5 @@ sudo nixos-rebuild switch
 # todo
 - [ ] make install script
 - [ ] add sops
-- [ ] add plasma-manager
+- [x] add plasma-manager
 - [ ] add lanzeboot

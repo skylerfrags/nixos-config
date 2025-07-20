@@ -23,9 +23,15 @@
      url = "github:catppuccin/nix";
    };
 
+  plasma-manager = {
+    url = "github:nix-community/plasma-manager";
+    inputs.nixpkgs.follows = "nixpkgs";
+    inputs.home-manager.follows = "home-manager";
   };
 
-  outputs = { self, nixpkgs, home-manager, niri, zen-browser, catppuccin, ... }@inputs: {
+  };
+
+  outputs = { self, nixpkgs, home-manager, niri, zen-browser, catppuccin, plasma-manager, ... }@inputs: {
     nixosConfigurations = {
       nixos = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
@@ -42,6 +48,7 @@
                 ./modules/home/home.nix
                 inputs.zen-browser.homeModules.twilight
                 catppuccin.homeModules.catppuccin
+                inputs.plasma-manager.homeManagerModules.plasma-manager
               ];
             };
 	        }
