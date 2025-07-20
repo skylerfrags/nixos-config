@@ -42,5 +42,7 @@
       displayBrightness = 100;
       turnOffDisplay.idleTimeout = 180; # 3 minutes idle for display to turn off
     };
+
+    session.sessionRestore.restoreOpenApplicationsOnLogin = "startWithEmptySession";
   };
 }
