@@ -40,7 +40,7 @@
       autoSuspend.action = "nothing";
       dimDisplay.enable = false;
       displayBrightness = 100;
-      turnOffDisplay.idletimeout = 180; # 3 minutes idle for display to turn off
+      turnOffDisplay.idleTimeout = 180; # 3 minutes idle for display to turn off
     };
   };
 }
