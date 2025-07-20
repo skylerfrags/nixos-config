@@ -35,5 +35,12 @@
         pointSize = 10;
       };
     };
+
+    powerdevil.AC = {
+      autoSuspend.action = "nothing";
+      dimDisplay.enable = false;
+      displayBrightness = 100;
+      turnOffDisplay.idletimeout = 180; # 3 minutes idle for display to turn off
+    };
   };
 }
