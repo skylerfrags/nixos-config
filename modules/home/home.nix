@@ -11,8 +11,8 @@
     ## programs with configuration
     ./git.nix
     ./terminal.nix
-    ./zen.nix       # Firefox Fork
-    #./brave.nix    # Chromium Fork
+    #./zen.nix       # Firefox Fork
+    ./brave.nix    # Chromium Fork
     ./obs.nix
     ./cava.nix
     
