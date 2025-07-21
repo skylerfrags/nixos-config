@@ -9,7 +9,7 @@
     };
     settings = {
       background_opacity = 0.75;
-      hide_window_decorations = enable; # enable when using niri
+      hide_window_decorations = true; # enable when using niri
     };
   };
 
