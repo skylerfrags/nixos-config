@@ -5,8 +5,8 @@
   imports = [
 
     ## desktops
-    #./niri
-    ./plasma.nix
+    ./niri
+    #./plasma.nix
 
     ## programs with configuration
     ./git.nix
@@ -22,7 +22,22 @@
     enable = true;
     accent = "mauve";
     flavor = "mocha";
-    gtk.enable = true;
+    cursors = {
+      enable = true;
+      flavor = "mocha";
+      accent = "dark";
+    };
+    gtk = {
+      enable = true;
+      flavor = "mocha";
+      accent = "mauve";
+      gnomeShellTheme = true;
+      icon = {
+        enable = true;
+        flavor = "mocha";
+        accent = "mauve";
+      };
+    };
     cava.transparent = true;
     nvim.enable = false;
     waybar.enable = false;
