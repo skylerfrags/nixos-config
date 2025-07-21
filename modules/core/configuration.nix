@@ -65,7 +65,7 @@
 
   services.input-remapper.enable = true;
 
-  environment.systemPackages = with pkgs; [
+  fonts.packages = with pkgs; [
     nerd-fonts.jetbrains-mono
     jetbrains-mono
     noto-fonts
@@ -73,6 +73,14 @@
     noto-fonts-color-emoji
     noto-fonts-monochrome-emoji
   ];
+
+  fonts.fontconfig = {
+    defaultFonts = {
+      serif = [ "JetBrainsMono" ];
+      sansSerif = [ "JetBrainsMono" ];
+      monospace = [ "JetBrainsMono Nerd Font" ];
+    };
+  };
 
   nix.gc = {
     automatic = true;
