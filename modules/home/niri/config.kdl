@@ -36,8 +36,9 @@ output "DP-5" {
 }
 
 layout {
-    gaps 5
-    center-focused-column "on-overflow"
+    gaps 4
+    center-focused-column "never"
+    always-center-single-column
     preset-column-widths {
         proportion 0.333
         proportion 0.5
@@ -51,17 +52,16 @@ layout {
 
     focus-ring {
         off
-        width 4
-        active-gradient from="#80c8ff" to="#bbddff" angle=45
-        inactive-gradient from="#505050" to="#808080" angle=45 relative-to="workspace-view"
-    }
+        width 3
+        active-color "#cba6f7"
+        inactive-color "#1e1e2e"
     border {
-        width 4
-        active-gradient from="#cba6f7" to="#89b4fa"
-        inactive-gradient from="#585b70" to="#585b70"
+        width 3
+        active-color "#cba6f7"
+        inactive-color "#1e1e2e"
     }
     shadow {
-        on
+        off
         draw-behind-window true
         softness 30
         spread 5
