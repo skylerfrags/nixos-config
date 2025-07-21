@@ -31,7 +31,6 @@
       enable = true;
       flavor = "mocha";
       accent = "mauve";
-      gnomeShellTheme = true;
       icon = {
         enable = true;
         flavor = "mocha";

@@ -55,21 +55,19 @@ layout {
         width 3
         active-color "#cba6f7"
         inactive-color "#1e1e2e"
+    }
     border {
         width 3
         active-color "#cba6f7"
         inactive-color "#1e1e2e"
     }
     shadow {
-        off
+        on
         draw-behind-window true
         softness 30
         spread 5
         offset x=0 y=5
         color "#00000070"
-    }
-    struts {
-
     }
 }
 
