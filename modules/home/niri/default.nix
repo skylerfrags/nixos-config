@@ -5,6 +5,7 @@
     pavucontrol
     playerctl
     xwayland-satellite
+    xfce.thunar
   ];
 
   programs.niri.config = builtins.readFile ./config.kdl;
