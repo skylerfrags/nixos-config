@@ -9,7 +9,7 @@
         { id = "ammjkodgmmoknidbanneddgankgfejfh"; } # 7TV
         { id = "jghecgabfgfdldnmbfkhmffcabddioke"; } # Volume Master
         { id = "mnjggcdmjocbbbhaepdhchncahnbgone"; } # SponsorBlock
-        { id = "bkkmolkhemgaeaeggcmfbghljjjoofoh"; } # Catppuccin Mocha Theme
+        { id = "clngdbkpkpeebahjckkjfobafhncgmne"; } # Stylus for Catppuccin Userthemes
     ];
   };
 }
