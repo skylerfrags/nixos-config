@@ -7,7 +7,7 @@ minimal, scuffed setup
 git clone https://github.com/skylerfrags/nixos-config.git nixos
 
 # move your hardware-configuration.nix file
-mv /etc/nixos/hardware-configuration.nix ~/nixos # move to home
+mv /etc/nixos/hardware-configuration.nix ~/nixos 
 
 # replace config
 sudo rm -rf /etc/nixos
