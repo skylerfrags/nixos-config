@@ -1,7 +1,9 @@
 { config, pkgs, ... }:
 
 {
-  imports = [ ./hardware-configuration.nix ];
+  imports = [
+    ./hardware-configuration.nix
+  ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
@@ -20,10 +22,11 @@
 
   services = {
     displayManager.sddm.enable = true;
-    displayManager.sddm.package = pkgs.kdePackages.sddm;
     displayManager.sddm.wayland.enable = true;
     desktopManager.plasma6.enable = true;
   };
+
+  ## displayManager.sddm.package = pkgs.kdePackages.sddm; when not using Plasma
 
   users.users.skyler = {
     isNormalUser = true;

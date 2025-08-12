@@ -1,9 +1,9 @@
+{ pkgs, ... }:
 {
   
   environment.systemPackages = with pkgs; [
 
     ## general
-    kitty
     ghostty
     unzip
     brave
@@ -22,7 +22,7 @@
     grayjay
     davinci-resolve
     krita
-    gimp
+    #gimp
     sonusmix
     obs-cmd
 
@@ -77,8 +77,5 @@
 
   programs.git = {
     enable = true;
-    userName = "skylerfrags";
-    userEmail = "quadfps@gmail.com";
   };
-}
 }
