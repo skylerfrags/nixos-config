@@ -7,11 +7,9 @@
     ghostty
     unzip
     brave
-    ripgrep
     vesktop
     starship
     fastfetch
-    fzf
     htop
     btop
     bitwarden
@@ -22,9 +20,16 @@
     grayjay
     davinci-resolve
     krita
-    #gimp
+    gimp
     sonusmix
     obs-cmd
+
+    ## hyprland stuff
+    waybar
+    fuzzel
+    swww
+    pavucontrol
+    hyprshot
 
     ## gaming
     lutris

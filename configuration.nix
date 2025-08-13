@@ -22,11 +22,19 @@
 
   services = {
     displayManager.sddm.enable = true;
+    displayManager.sddm.package = pkgs.kdePackages.sddm;
     displayManager.sddm.wayland.enable = true;
-    desktopManager.plasma6.enable = true;
+    desktopManager.plasma6.enable = false;
   };
 
   ## displayManager.sddm.package = pkgs.kdePackages.sddm; when not using Plasma
+
+  programs.hyprland.enable = true; ## may switch to flake at some point
+  environment.sessionVariables.NIXOS_OZONE_WL = "1";
+  programs.xwayland.enable = true;
+
+  security.rtkit.enable = true;
+  security.polkit.enable = true;
 
   users.users.skyler = {
     isNormalUser = true;
@@ -34,14 +42,6 @@
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [];
   };
-
-  environment.sessionVariables.NIXOS_OZONE_WL = "1";
-
-  programs.xwayland.enable = true;
-
-  security.rtkit.enable = true;
-  security.polkit.enable = true;
-
 
   services.gvfs.enable = true;
   services.pulseaudio.enable = false;
